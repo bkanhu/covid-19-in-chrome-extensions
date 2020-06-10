@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+  
+    "name": "COVID 19 India Stats",
+    "description": "Display COVID 19 India Stats.",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icons8-coronavirus-50.png",
+     "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["popup.js"],
+        "persistent": false
+      },
+    "permissions": [
+     "activeTab"
+     ]
+  }

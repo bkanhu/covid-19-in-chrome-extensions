@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>GTmetrix Analyzer</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            display: flex;
+            /* display: inline-block; */
+            height: 50px;
+            padding-top: 15px;
+        }
+        .logo{
+            width: 35px;
+            height:35px;
+            /* padding-top: 15px; */
+        }
+        header span{
+            font-size: 15px;
+            font-weight: 700;
+
+            padding-top: 5px;
+        }
+        .stats {
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .stat_box {
+            width: 150px;
+            height: 80px;
+           
+            margin: 10px 0 10px 0;
+            /* margin: auto; */
+        }
+
+        .stat_box h3 {
+            font-weight: 700;
+            /* padding: 15px 0 0 0; */
+        }
+
+        .number {
+            font-size: 25px;
+            /* font-size: 35px; */
+            padding-bottom: 55px;
+        }
+
+        .confirmed {
+            background: linear-gradient(220deg,
+                    rgba(67, 202, 255, 0.644),
+                    rgba(152, 8, 204, 0.5));
+        }
+
+        .active {
+            background: linear-gradient(220deg,
+                    rgba(32, 191, 85, 0.767),
+                    rgba(1, 187, 239, 0.712));
+        }
+
+        .recovered {
+            background: linear-gradient(220deg,
+                    rgba(255, 203, 47, 0.836),
+                    rgba(239, 86, 52, 0.836));
+        }
+
+        .deceased {
+            background: linear-gradient(220deg,
+                    rgba(4, 240, 193, 0.877),
+                    rgba(73, 2, 187, 0.705));
+        }
+        footer{
+            padding: 10px;
+            color: #fff;
+            background: #333;
+            width: 100%;
+            /* font-size: 15px;
+            font-weight: 800; */
+        }
+        footer a{
+            font-size: 15px;
+            color: #fff;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <img src="https://img.icons8.com/bubbles/50/000000/coronavirus.png" class="logo"/>
+        <span>COVID 19 IN  Stat</span>
+    </header>
+    <!-- <h1>GTmetrix Analyzer</h1> -->
+    <div class="row stats" id="data">
+
+
+        <div class="stat_box confirmed">
+            <h3>Confirmed</h3>
+            <span class="number" id="confirmed"></span>
+        </div>
+
+        <div class="stat_box active">
+            <h3>Active</h3>
+            <span class="number" id="active"></span>
+        </div>
+
+        <div class="stat_box recovered">
+            <h3>Recovered</h3>
+            <span class="number" id="recovered"></span>
+        </div>
+
+        <div class="stat_box deceased">
+            <h3>Deceased</h3>
+            <span class="number" id="deceased"></span>
+            <!-- <span class="number" id="deceased></span> -->
+        </div>
+
+        <h4>Last Updated - <span class="last_updated"> </span></h4>
+    </div>
+    <!-- <button id="checkPage">Check this page now!</button> -->
+    <footer>
+        COVID-19 by Kanhu Charan
+        <br><br>
+        <a href="">fork me on Github</a><br><br>
+        <a href="https://github.com/bkanhu/covid-19-in">Covid 19 tracker india</a>
+    </footer>
+</body>
+
+</html>
